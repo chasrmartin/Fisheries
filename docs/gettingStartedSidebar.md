@@ -168,3 +168,38 @@ $ tree -a
     └── server.js
 ```
 
+You can see that this created a directory named `.git` with a whole lot of stuff in it, none of which we really care about now, so we'll ignore it. The important thing for now is that our app has a `.git` directory, which means it now has a local git repository.
+
+We now want to connect it with our GitHub repository. To do that, go back to your GitHub web page for the repository.
+
+((screen cap here))
+
+Click the "Clone or Download" button, and then click the little clipboard icon, and the URL for your repository will be copied to your clipboard. Mine is `https://github.com/chasrmartin/Fisheries.git`. 
+
+We add that repository as a remove repository named "origin" to our existing repository:
+
+```shell
+$ git remote add origin https://github.com/chasrmartin/Fisheries.git
+```
+
+Then `git remote -v` shows that the remote is there.
+
+``` shell
+$ git remote -v
+origin	https://github.com/chasrmartin/Fisheries.git (fetch)
+origin	https://github.com/chasrmartin/Fisheries.git (push)
+$
+```
+
+Don't despair, we're almost done. The last thing we want to do is pull the remote repo so our local copy matches the remote we created. We're getting the two of them in sync.
+
+```shell
+$ git pull origin master
+$ git push origin master
+```
+
+# Review
+
+> **To Do**
+
+
