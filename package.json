@@ -1,0 +1,14 @@
+{
+  "name": "fisheries",
+  "version": "0.0.0",
+  "description": "An MVP web app for fishermen, retrieving, storing and (perhaps) sharing information about time and tides, location, catch, and user-defined notes.",
+  "main": "app/js/app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charlie Martin chasrmartin@refactoru.com",
+  "license": "ISC"
+}
