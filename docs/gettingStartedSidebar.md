@@ -1,12 +1,12 @@
 # Getting Started: A Sidebar
 
-So, over in the other text we've talked about how to get your project started conceptually. We also need to get the project, well, _started_. Where's the code, where are we going to do the work?
+Over in the other text we've talked about how to get your project started conceptually. We also need to get the project, well, _started_. Where's the code, where are we going to do the work?
 
 So, let's look at that.
 
 There are some very basic things we need to do just to get started, and most of them are best done from the command line. 
 
-> Not comfortable with the command line? <Yoda>You will be. You will be.</Yoda> 
+> Not comfortable with the command line? \<Yoda\>You will be. You will be.\</Yoda\> 
 
 So, open your favorite terminal application, and navigate to where you keep your working files.  I _always_ put _everything_ in my Dropbox, so that it's available across my different machines and always backed up. Of course, I also put my code into Github or Bitbucket or Gitlab. And I wear suspenders and a belt.
 
@@ -39,7 +39,7 @@ $ touch public/index.html public/css/main.css
 Now we have our directory set up, so we can initialize things.
 
 > I also created a directory `docs`, which contains -- among other things -- the document you're reading now.
-> ```shell
+> ```
 > $ mkdir docs
 > ```
 
@@ -203,3 +203,49 @@ $ git push origin master
 > **To Do**
 
 
+## Create the working directory
+
+```bash
+$ cd /Users/chasrmartin/Dropbox/Etudes/Angular/
+$ mkdir Fisheries && cd $_
+```
+
+## Create the working directories and initial files
+
+```shell
+$ mkdir -p app/js server public/css 
+$ touch app/js/index.js 
+$ touch server/server.js 
+$ touch public/index.html public/css/main.css
+```
+
+## Create the `package.json` file with `npm init`
+
+```shell
+$ npm init
+```
+
+## Create your remote repository
+
+* make a new repo on GitHub
+
+## Create your local Git repository
+
+```shell
+$ git init
+```
+
+## Make your remote repo the 'origin' repo for your local
+
+Remember you need to get the remote repo URL from your GitHub repo page.
+
+```shell
+$ git remote add origin https://github.com/chasrmartin/Fisheries.git
+```
+
+## Synchronise the repos
+
+```shell
+$ git pull origin master
+$ git push origin master
+```
