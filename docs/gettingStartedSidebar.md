@@ -98,7 +98,7 @@ There is a standard called [semantic versioning](http://semver.org/) which is co
 
 The first _released_ version is 1.0.0. The major version changes when changes are made that are backward-incompatible; we can't be backward incompatible to something that doesn't exist, so with start with a major version of `0`. It doesn't have any features at all, so the minor version is `0`. And there are no patch numbers, so the patch number is `0`. 
 
-> __Warning__: I asked three people and got _n_ > 3 opinions on this. So I'm picking one I think makes sense, and your milage may vary.
+> __Warning__: I asked three people and got _n_ > 3 opinions on this. So I'm picking one I think makes sense, and your mileage may vary.
 
 We've now got a basic package setup for Node, and we're ready to prepare the first commit for git. This (at last) is really easy.
 
